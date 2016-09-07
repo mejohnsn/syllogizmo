@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:text displays immediately above Spinners -->
+<!-- seems redundant when strings.xml already defines major_premise_title -->
+<!-- rewriting to support Japanese word order for syllogisms as described at -->
+<!-- http://ja.wikipedia.org/wiki/%E4%B8%89%E6%AE%B5%E8%AB%96%E6%B3%95 -->
+<!-- Curious: allocation of spinners to quantifier/verb rsp. still works for layout,  -->
+<!-- as long as verb spinner allows selection of positive OR negative; but then-->
+<!-- 'quantifier' is no longer pure quantifier: both 'quantifier' AND verb must be inspected -->
+<!-- to determine AIEO -->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/major_premise_label"
+        />
+<!-- the quantifier spinner stays in the same position... -->
+<!-- e.g. "subete no" -->
+    <Spinner 
+        android:id="@+id/major_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        />
+    <EditText
+        android:id="@+id/major_subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ningen" />
+<!-- need to insert View for particle: user cannot edit, so:-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="wa" />
+<!-- the above works, but slams the particle left in small font. Need-->
+<!-- to do better than that-->
+    <EditText
+        android:id="@+id/major_predicate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="moribund" />
+    <Spinner 
+        android:id="@+id/major_verb_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/verb_prompt" />
+    <Button
+        android:id="@+id/major_done_button"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/major_done_button_label" android:layout_gravity="right"/>
+<!-- TODO: use resource for text, figure out why -->
+<!-- gravity="right" hasn't the desired effect: putting button on far right -->        
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- quantifer_button,label temporary: these will eventually by elsewhere, -->
+<!--there place in this file taken by Major/Minor Premise button/label etc.-->
+<!-- and why do I need two Layouts? -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="25dip" > <!--  was 10: 25 much better ex. in landscape -->
+   <TextView
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/hello"
+    />
+    <LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <Button
+       android:id="@+id/major_premise_button"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/major_premise_button_label"
+    />
+    <Button
+       android:id="@+id/minor_premise_button"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/minor_premise_button_label"
+    />
+    <Button
+       android:id="@+id/conclusion_button"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/conclusion_button_label"
+    />
+    <Button
+       android:id="@+id/show_results_button"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/show_results_label"
+    />        
+    <Button
+       android:id="@+id/about_button"
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:text="@string/about_label"
+    />
+
+    </LinearLayout>
+</LinearLayout>

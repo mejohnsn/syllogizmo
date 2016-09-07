@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:text displays immediately above Spinners -->
+<!-- seems redundant when strings.xml already defines major_premise_title -->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_height="fill_parent"
+  android:layout_width="fill_parent">
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/conclusion_label"
+        />
+    <Spinner 
+        android:id="@+id/conclusion_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/conclusion_prompt"
+        />
+    <EditText
+        android:id="@+id/conclusion_subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Greeks" />
+    <Spinner 
+        android:id="@+id/conclusion_verb_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/verb_prompt" />
+    <EditText
+        android:id="@+id/conclusion_predicate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="mortal" />
+    <Button
+        android:id="@+id/conclusion_done_button"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/major_done_button_label" />      
+</LinearLayout>

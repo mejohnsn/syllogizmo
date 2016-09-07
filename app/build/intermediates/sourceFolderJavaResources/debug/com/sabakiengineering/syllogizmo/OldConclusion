@@ -1,0 +1,53 @@
+package com.sabakiengineering.syllogizmo;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
+
+
+import android.app.Activity;
+
+public class Conclusion extends Activity implements OnClickListener {
+	private final String TAG = "Conclusion";
+	@SuppressWarnings("unchecked")
+		@Override
+	    public void onCreate(Bundle savedInstanceState) {
+		Log.d(TAG, "entering onCreate");
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.conclusion);
+		// Now set up spinners: quantifier and are/are not
+		Spinner conclusionSpinner = (Spinner) findViewById(R.id.conclusion_spinner);
+		Spinner verbSpinner = (Spinner) findViewById(R.id.verb_spinner);
+		EditText subject = (EditText) findViewById(R.id.conclusion_subject);
+		EditText predicate = (EditText) findViewById(R.id.conclusion_predicate);
+		// ArrayAdapter binds string array to layout view elementwise
+		ArrayAdapter verb_adapter = ArrayAdapter.createFromResource(
+				this, R.array.verbs, android.R.layout.simple_spinner_item);
+		verb_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		verbSpinner.setAdapter(verb_adapter); // now if we actually USED data from this adapter, somewhere we would have s.getItem to return it.
+		// put EditText box in between the two spinners -- just like in real layout
+
+		ArrayAdapter conQuant_adapter = ArrayAdapter.createFromResource(
+				this, R.array.quantifiers, android.R.layout.simple_spinner_item);
+		conQuant_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		conclusionSpinner.setAdapter(conQuant_adapter); // now if we actually USED data from this adapter, somewhere we would have s.getItem to return it.
+		View doneButton = findViewById(R.id.done_button3);
+		Log.d(TAG, "onCreate set up 2 spinners and adapters");
+
+	}
+	@Override
+		public void onClick(View arg0) {
+		// TODO Auto-generated method stub
+		// for now nothing, since I don't know how to get these
+		// events anyway!
+		//
+		// But I think the way it will work is: this is where we go when
+		// the user clicks 'Done' -- but that is only if I USE a 'Done' key
+		// which I might not do. Yet that seems the easiest way to know
+		// when to take snapshot of values and pass to CatStatement/Syllogism
+	
+	}
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- major_premise_title is title of whole Layout, MajorPremise -->
+<!-- major_premise_label displays IN button -->
+<resources>
+    <string name="hello">Bienvenido a SylloGizmo (SiloGuizmo)!</string>
+    <string name="app_name">SylloGizmo</string>
+    <string name="major_premise_title">Premisa Mayor:</string>
+    <string name="major_premise_button_label">Premisa Mayor</string>
+    <string name="major_premise_label">Introducir la premisa mayor</string>
+    <string name="major_done_button_label">Acabado</string>
+    <string name="minor_premise_title">Premisa Menor:</string>
+    <string name="minor_premise_button_label">Premisa Menor</string>
+    <string name="minor_premise_label">Introducir la premisa menor</string>
+    <string name="conclusion_prompt">Introducir la conclusión:</string>
+    <string name="conclusion_title">Y la gran conclusión es la siguiente:</string>
+    <string name="conclusion_button_label">Conclusión</string>
+    <string name="continue_button_label">Continuar</string>
+    <string name="conclusion_label">Introducir la conclusión:</string>
+    <string name="verb_prompt">verbo</string>
+    <string name="quantifier_prompt">Introducir el cuantificador:</string>
+    <string name="quant_title">Cuantificador</string>
+    <string name="quantifier_label">cuantificador</string>
+    <string name="show_results_prompt">Mostrar los resultados</string>
+    <string name="show_results_label">Resultados</string>
+    <string name="show_results_title">resultados</string>
+    <string name="null_mnemonic">no hay mnemonico</string>
+    <string name="help_menu_title">Ayuda</string>
+    <string name="help_menu_text">\
+Introducir las premisas mayor y menor, y la conclusión. Entonces
+oprimir \'Resultados\' para validar y calcular los datos para el
+silogismo. Al oprimir el botón \'Acabado\' compromete a todos los datos.</string>
+    <string name="prefs_menu_title">Preferencias</string>
+    <string name="prefs_menu_text">Aún no está implementado</string>
+    <string name="about_title">Acerca de SylloGizmo</string>
+    <string name="about_label">Acerca de SylloGizmo</string>
+    <string name="about_text">\
+
+SylloGizmo 1.3 le permite introducir tres proposiciones: la
+premisa mayor, la premisa minor y la conclusión. Entonces SylloGizmo
+calcula el modo y la figura, y valida el silogismo. Próximamente: El Cuadro de Oposición y los
+Diagramos de Venn</string>
+     <string name="fig_not_applicable">No hay figura</string>
+     <string name="validity_false">El silogismo no es válido</string>
+     <string name="validity_true">El silogismo es válido</string>
+     <string name="validity_with_add">El silogismo es válido con una premisa adicional</string>
+     <string name="first_figure">Primera figura</string>
+     <string name="second_figure">Segunda figura</string> 
+     <string name="third_figure">Tercera figura</string> 
+     <string name="fourth_figure">Cuarta figura</string>
+     <string name="mood_is">El Modo es:</string>
+     <string name="universal_affirmative_quantifier">Todos los/Todas las</string>
+     <string name="universal_negative_quantifier">Ningunos/Ningunas</string>
+     <string name="particular_quantifier">Algunos/Algunas</string>
+     <!-- no need for separate affirmative and negative for this one -->
+     <string name="postive_copula">son</string>
+
+ </resources>
+<!-- alternatives to ingresar: anotar apuntar introducir-->
+<!-- universal_affirmative_quantifier etc. currently not used -->

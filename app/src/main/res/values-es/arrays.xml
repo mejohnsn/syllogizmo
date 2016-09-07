@@ -1,0 +1,12 @@
+<resources>
+    <string-array name="quantifiers">
+        <item>Todos los/Todas las</item>
+        <item>Algunos/Algunas</item>
+        <item>Ningunos/Ningunas</item>
+    </string-array>
+
+    <string-array name="verbs">
+        <item>son</item>
+        <item>no son</item>
+    </string-array>
+</resources>

@@ -1,0 +1,85 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:4:1-45:12
+	package
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:5:7-49
+		INJECTED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:7:7-32
+		INJECTED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:6:7-30
+		INJECTED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:4:11-69
+application
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:8:5-44:19
+	android:label
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:10:9-41
+	android:icon
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:9:5-34
+activity#com.sabakiengineering.syllogizmo.SylloGizmo
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:11:9-17:20
+	android:label
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:12:19-51
+	android:name
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:11:19-45
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:13:13-16:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:15:17-77
+	android:name
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:15:27-74
+activity#com.sabakiengineering.syllogizmo.MajorPremise
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:19:9-21:20
+	android:label
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:20:9-52
+	android:name
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:19:19-47
+activity#com.sabakiengineering.syllogizmo.MinorPremise
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:23:9-25:20
+	android:label
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:24:9-52
+	android:name
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:23:19-47
+activity#com.sabakiengineering.syllogizmo.Conclusion
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:27:9-30:20
+	android:label
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:28:9-49
+	android:name
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:27:19-45
+activity#com.sabakiengineering.syllogizmo.ShowResults
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:32:9-34:20
+	android:label
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:33:9-51
+	android:name
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:32:19-46
+activity#com.sabakiengineering.syllogizmo.Settings
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:36:9-38:20
+	android:label
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:37:9-49
+	android:name
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:36:19-43
+activity#com.sabakiengineering.syllogizmo.About
+ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:40:9-43:20
+	android:label
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:41:9-44
+	android:theme
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:42:9-52
+	android:name
+		ADDED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml:40:19-40
+uses-sdk
+INJECTED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+	android:targetSdkVersion
+		INJECTED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\mejohnsn\AndroidStudioProjects\SylloGizmo\app\src\main\AndroidManifest.xml

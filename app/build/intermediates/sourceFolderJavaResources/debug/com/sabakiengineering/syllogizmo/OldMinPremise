@@ -1,0 +1,56 @@
+package com.sabakiengineering.syllogizmo;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
+
+/**
+ * 
+ * @author mejohnsn
+ * Activity/Screen for handling input of Major Premise. Currently only
+ * displays Spinners for quantifier and verb.
+ * 
+ * TODO: 1) add EditText to get actual text of subject/predicate DONE
+ * 2) get values returned by spinner
+ * 3) assemble into CatStatement.
+ */
+public class MinorPremise extends Activity implements OnClickListener {
+	private final String TAG = "MinorPremise";
+	  @SuppressWarnings("unchecked")
+	@Override
+	    public void onCreate(Bundle savedInstanceState) {
+		  Log.d(TAG, "entering onCreate");
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.minor_premise);
+	    	// Now set up spinners: quantifier and are/are not
+	    	Spinner minQuantSpinner = (Spinner) findViewById(R.id.minor_spinner);
+	    	Spinner verbSpinner = (Spinner) findViewById(R.id.verb_spinner);
+		    EditText subject = (EditText) findViewById(R.id.minor_subject);
+		    EditText predicate = (EditText) findViewById(R.id.minor_predicate);
+		    // ArrayAdapter binds string array to layout view elementwise
+		    ArrayAdapter verb_adapter = ArrayAdapter.createFromResource(
+		            this, R.array.verbs, android.R.layout.simple_spinner_item);
+		    verb_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		    verbSpinner.setAdapter(verb_adapter); // now if we actually USED data from this adapter, somewhere we would have s.getItem to return it.
+// put EditText box in between the two spinners -- just like in real layout
+
+		    ArrayAdapter minQuant_adapter = ArrayAdapter.createFromResource(
+		            this, R.array.quantifiers, android.R.layout.simple_spinner_item);
+		    minQuant_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		    minQuantSpinner.setAdapter(minQuant_adapter); // now if we actually USED data from this adapter, somewhere we would have s.getItem to return it.
+	    	View doneButton = findViewById(R.id.done_button2); 
+		    Log.d(TAG, "onCreate set up 2 spinners and some more");
+	  }
+	@Override
+	public void onClick(View arg0) {
+		// TODO Auto-generated method stub
+		// for now nothing, since I don't know how to get these
+		// events anyway!
+		
+	}
+}

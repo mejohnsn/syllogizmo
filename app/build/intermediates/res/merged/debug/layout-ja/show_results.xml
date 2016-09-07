@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <TextView
+     android:id="@+id/results_view_mood"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="Mood not set"
+     />
+  <!--  were both wrap_content -->
+  <!--  we never see "Mood not set" anymore -->
+  <TextView
+     android:id="@+id/results_view_figure"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="@string/fig_not_applicable"
+     />
+  <TextView
+     android:id="@+id/results_view_validity"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="@string/validity_false"
+     />
+</LinearLayout>

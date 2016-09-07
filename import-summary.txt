@@ -1,0 +1,47 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* default.properties
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\com\sabakiengineering\syllogizmo\.gitignore => app\src\main\resources\com\sabakiengineering\syllogizmo\.gitignore
+* src\com\sabakiengineering\syllogizmo\com.sabakiengineering.syllogizmo_preferences.xml => app\src\main\resources\com\sabakiengineering\syllogizmo\com.sabakiengineering.syllogizmo_preferences.xml
+* src\com\sabakiengineering\syllogizmo\Conclusion.java~ => app\src\main\resources\com\sabakiengineering\syllogizmo\Conclusion.java~
+* src\com\sabakiengineering\syllogizmo\MajorPremise.java~ => app\src\main\resources\com\sabakiengineering\syllogizmo\MajorPremise.java~
+* src\com\sabakiengineering\syllogizmo\MinorPremise.java~ => app\src\main\resources\com\sabakiengineering\syllogizmo\MinorPremise.java~
+* src\com\sabakiengineering\syllogizmo\OldConclusion => app\src\main\resources\com\sabakiengineering\syllogizmo\OldConclusion
+* src\com\sabakiengineering\syllogizmo\OldMinPremise => app\src\main\resources\com\sabakiengineering\syllogizmo\OldMinPremise
+* src\com\sabakiengineering\syllogizmo\QuantSpinner.java~ => app\src\main\resources\com\sabakiengineering\syllogizmo\QuantSpinner.java~
+* src\com\sabakiengineering\syllogizmo\ShowResults.java~ => app\src\main\resources\com\sabakiengineering\syllogizmo\ShowResults.java~
+* src\com\sabakiengineering\syllogizmo\Syllogism.java~ => app\src\main\resources\com\sabakiengineering\syllogizmo\Syllogism.java~
+* src\com\sabakiengineering\syllogizmo\SyllogismTest.java~ => app\src\main\resources\com\sabakiengineering\syllogizmo\SyllogismTest.java~
+* src\com\sabakiengineering\syllogizmo\SylloGizmo.java~ => app\src\main\resources\com\sabakiengineering\syllogizmo\SylloGizmo.java~
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

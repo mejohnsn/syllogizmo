@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\conclusion.xml",
+        "source": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\src\\main\\res\\layout\\conclusion.xml"
+    },
+    {
+        "merged": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\major_premise.xml",
+        "source": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\src\\main\\res\\layout\\major_premise.xml"
+    },
+    {
+        "merged": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\minor_premise.xml",
+        "source": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\src\\main\\res\\layout\\minor_premise.xml"
+    },
+    {
+        "merged": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\about.xml",
+        "source": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\src\\main\\res\\layout\\about.xml"
+    },
+    {
+        "merged": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\show_results.xml",
+        "source": "C:\\Users\\mejohnsn\\AndroidStudioProjects\\SylloGizmo\\app\\src\\main\\res\\layout\\show_results.xml"
+    }
+]

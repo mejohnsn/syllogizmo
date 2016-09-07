@@ -1,0 +1,15 @@
+<resources>
+
+    <string-array name="quantifiers">
+        <item>All</item>
+        <item>Some</item>
+        <item>No</item>
+    </string-array>
+
+
+    <string-array name="verbs">
+        <item>are</item>
+        <item>are not</item>
+    </string-array>
+    
+</resources>

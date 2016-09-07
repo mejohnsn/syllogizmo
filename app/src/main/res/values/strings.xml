@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- major_premise_title is title of whole Layout, MajorPremise -->
+<!-- major_premise_label displays IN button -->
+<resources>
+    <string name="hello">Welcome to SylloGizmo!</string>
+    <string name="app_name">SylloGizmo</string>
+    <string name="major_premise_title">Major Premise</string>
+    <string name="major_premise_button_label">Major Premise</string>
+    <!--  difference in case was useful only to illustrate above on higher line -->
+    <!--  i.e. as title of screen -->
+    <string name="major_premise_label">Enter Major Premise:</string>
+    <string name="major_done_button_label">Done</string>
+    <string name="minor_premise_title">Minor Premise</string>
+    <string name="minor_premise_button_label">Minor Premise</string>
+    <string name="minor_premise_label">Enter Minor Premise:</string>
+    <string name="conclusion_prompt">Enter Conclusion:</string>
+    <string name="conclusion_title">And the Grand Conclusion is!</string>
+    <string name="conclusion_button_label">Conclusion</string>
+    <string name="conclusion_label">Enter Conclusion:</string>
+    <string name="continue_button_label">Continue</string>
+    <string name="verb_prompt">verb</string>
+    <string name="quantifier_prompt">Enter quantifier:</string>
+    <string name="quant_title">Quantifier</string>
+    <string name="quantifier_label">quantifier</string>
+    <string name="show_results_prompt">See Results</string>
+    <string name="show_results_label">Results</string>
+    <string name="show_results_title">Results</string>
+    <string name="null_mnemonic">null mnemonic</string>
+    <string name="help_menu_title">Help</string>
+    <string name="help_menu_text">\
+    Enter all of Major/Minor Premise and Conclusion, then press Results
+    to validate and calculate mood/figure. Done Button commits all data, Back discards all data.</string>
+    <string name="prefs_menu_title">Preferences</string>
+    <string name="prefs_menu_text">Not yet implemented</string>
+    <string name="first_pref_cat_title">Select on/off</string>
+    <string name="keep_default_syllogism">keepsies</string>
+    <string name="keep_default_syllogism_title">Keep Default Syllogism?</string>
+    <string name="keep_default_syllogism_summary">Keep \'All Men...\'?"</string>
+    <string name="about_title">About SylloGizmo</string>
+    <string name="about_label">About SylloGizmo</string>
+    <string name="about_text">\
+    SylloGizmo 1.3 allows entry and validation of a classical syllogism. See Help for details.
+     Copyright 2010 Matthew Johnson
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+     </string>
+     <string name="fig_not_applicable">Figure not applicable</string>
+     <string name="validity_false">Syllogism is invalid</string>
+     <string name="validity_true">Syllogism is valid</string>
+     <string name="validity_with_add">Syllogism is valid with additional premise</string>
+     <string name="first_figure">First figure</string>
+     <string name="second_figure">Second figure</string> 
+     <string name="third_figure">Third figure</string> 
+     <string name="fourth_figure">Fourth figure</string> 
+     <string name="mood_is">Mood is:</string>
+     <string name="universal_affirmative_quantifier">All</string>
+     <string name="universal_negative_quantifier">No</string>
+     <string name="particular_quantifier">Some</string>
+     <!-- no need for separate affirmative and negative for this one -->
+     <string name="postive_copula">are</string>
+</resources>
+<!-- previous contents of about_text:
+ SylloGizmo (ver. 0.9) allows you to enter three classical (Aristotelian)
+     categorical statements as Major Premise, Minor Premise
+     and Conclusion. The program then computes the mood and
+     figure of the syllogism, and checks it for validity.
+     Coming soon: Square of Opposition and Venn Diagrams</string>
+-->
+<!-- interesting how 'conclusion_label' etc. has replace 'conclusion_prompt -->

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/minor_premise_label"
+        />
+    <Spinner 
+        android:id="@+id/minor_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+    />
+    <EditText
+        android:id="@+id/minor_subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nihonjin" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="wa" />
+    <EditText
+        android:id="@+id/minor_predicate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ningen" />
+    <Spinner 
+        android:id="@+id/minor_verb_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/verb_prompt" />
+     <Button
+        android:id="@+id/minor_done_button"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/major_done_button_label" />      
+</LinearLayout>

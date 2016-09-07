@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="results_color">#ff228b22</color>
+<!--  was ffff3500 -->
+<!--  80ff1111 was interesting, but too orange -->
+<!--  ff7011ff an interesting blue -->
+<!--  the problem was I thought order was RGBA, it is ARGB -->
+</resources>
