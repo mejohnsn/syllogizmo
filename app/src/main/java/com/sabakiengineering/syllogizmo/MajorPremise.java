@@ -41,10 +41,10 @@ import android.widget.SpinnerAdapter;
  */
 public class MajorPremise extends Activity implements OnClickListener {
 	private final String TAG = "MajorPremise";
-	private ArrayAdapter<CharSequence> quant_adapter;  // moved from onCreate
+	private ArrayAdapter<CharSequence> quant_adapter;
 	private ArrayAdapter<CharSequence> verb_adapter;
-	private Spinner quantSpinner;        // to share with onClick
-	private Spinner verbSpinner;            // which suggests I didn't need the 'maj' prefix above
+	private Spinner quantSpinner;
+	private Spinner verbSpinner;
     @SuppressWarnings("unused")          // it IS used.
 	private EditText subject;
     @SuppressWarnings("unused")
@@ -57,12 +57,12 @@ public class MajorPremise extends Activity implements OnClickListener {
 
     CatStatement Major_Premise = new CatStatement(SylloGizmo.FinalMajorPremise);
 
-    @Override // temporary location: more readable for now.
+    @Override
 	public void onClick(View v) {
 
 		switch (v.getId()) {
 		case R.id.major_done_button:
-			// copy all the Spinner View data to model (FinalSyllogism etc)
+			// copy all the Spinner View data to model (FinalMajorPremise)
 			//  starting w/ quantifier spinner...
 			//  but we now use Index, to keep correspondence btw string const & i18n
 			Major_Premise.setQuantifier(quantSpinner.getSelectedItemPosition());
@@ -70,7 +70,7 @@ public class MajorPremise extends Activity implements OnClickListener {
 			// Now the same for the other (verb) spinner
 			Major_Premise.setVerb(verbSpinner.getSelectedItemPosition());
 			// EditText objects no longer handled here: they have
-			//  their own TextWatcher to update on every change
+			// their own TextWatcher to update on every change
 			// Finally, copy to global
 			com.sabakiengineering.syllogizmo.SylloGizmo.FinalMajorPremise = Major_Premise;
 			finish();
@@ -117,9 +117,9 @@ public class MajorPremise extends Activity implements OnClickListener {
 	    	doneButton.setOnClickListener(this);
 //	    	Log.d(TAG, "onCreate set up 2 spinners, 2 EditTexts & 1 btn");
 	    	
-	    	// Finally, get values fm Major_Premise into Views:
+	    	// Finally, get values from Major_Premise into Views:
 			// For Spinners, more precisely, translate Major_Premise values into
-			// localized string placed in Adapter corr. to View
+			// localized string placed in Adapter corresponding to View
 
 			quantSpinner.setSelection(Major_Premise.getQuantifierIndex());
 			verbSpinner.setSelection(Major_Premise.getVerbIndex());
@@ -130,20 +130,7 @@ public class MajorPremise extends Activity implements OnClickListener {
             
 			subject.addTextChangedListener(new TextWatcher() {
 				@SuppressWarnings("unused") // Why IS this never used?
-				public void onTextChanged(Editable s) {
-					// Amazingly, Manning does not cover this: I had to find
-					// http://androidcommunity.com/forums/f2/making-a-generic-textwatcher-for-multiple-edittexts-14876/
-					// to learn that it could be done.
-					Major_Premise.setSubject(s.toString());
-//					Log.d(TAG, Major_Premise.getSubject());
-					// every time this EditText changes, copy change to
-					// Major_Premise's predicate
-					// so why don't we ever get here?? A: we get to the other
-					// onTextChanged
-					// instead:(
-				}
-
-				@Override
+                @Override
 				public void beforeTextChanged(CharSequence s, int start, int count,
 						int after) {
 //					Log.d(TAG, "got to beforeTextChanged");
@@ -151,7 +138,7 @@ public class MajorPremise extends Activity implements OnClickListener {
 
 				@Override
 				/**
-				 * Get each change to subject EditText, copy to MajorPremise
+				 * Get each change to subject EditText, copy to Major_Premise
 				 */
 				public void onTextChanged(CharSequence s, int start, int before,
 						int count) {
@@ -195,11 +182,11 @@ public class MajorPremise extends Activity implements OnClickListener {
 				}
 			});
 
-    } // closes onCreate
+    }
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		// inflater used to read menu def fm XML, mk rl view.
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.menu, menu);
 		return true;

@@ -44,7 +44,7 @@ public class Conclusion extends Activity implements OnClickListener {
 
 		switch (v.getId()) {
 		case R.id.conclusion_done_button:
-			// copy all the view data to model (FinalSyllogism etc)
+			// copy all the view data to model (FinalConclusion)
 			//  starting w/ quantifier spinner...
 //			Log.d(TAG, (String) quant_adapter.getItem(quantSpinner
 			//		.getSelectedItemPosition()));
@@ -174,7 +174,6 @@ public class Conclusion extends Activity implements OnClickListener {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		// inflater used to read menu def fm XML, mk rl view.
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.menu, menu);
 		return true;
@@ -196,16 +195,13 @@ public class Conclusion extends Activity implements OnClickListener {
 
 		private void get_settings() {
 //			Log.d(TAG, "get_settings");
-			// imitating Unlocking Androidp65 again:
 			StringBuilder vText = new StringBuilder("").append(getResources()
-					.getString(R.string.prefs_menu_text)); // this is printed below
-														   // the line
-			// while help_menu_text printed above.
+					.getString(R.string.prefs_menu_text));
 			StringBuilder cText = new StringBuilder("").append(getResources().getString(R.string.continue_button_label));
 
 			new AlertDialog.Builder(this).setTitle(
 					getResources().getString(R.string.prefs_menu_title))
-					.setMessage(vText.toString()).setPositiveButton(cText, // should use res	
+					.setMessage(vText.toString()).setPositiveButton(cText,
 							new android.content.DialogInterface.OnClickListener() {
 								public void onClick(DialogInterface dialog, int arg1) { // do nothing
 								}
@@ -214,10 +210,8 @@ public class Conclusion extends Activity implements OnClickListener {
 		}
 		private void get_help() {
 //  		Log.d(TAG, "get_help");
-			// imitating Unlocking Androidp65:
+
 			StringBuilder validationText = new StringBuilder("").append(getResources().getString(R.string.help_menu_text));
-			// this is printed below the line
-			// while help_menu_text printed above.
 			StringBuilder cText = new StringBuilder("").append(getResources().getString(R.string.continue_button_label));
 
 			new AlertDialog.Builder(this).setTitle(
