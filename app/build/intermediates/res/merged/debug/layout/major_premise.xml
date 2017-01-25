@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- android:text displays immediately above Spinners -->
 <!-- seems redundant when strings.xml already defines major_premise_title -->
-<LinearLayout
+<RelativeLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:orientation="vertical"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent">
      <TextView
+         android:id="@+id/major_premise_tv"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dip"
@@ -14,33 +15,38 @@
         />
     <Spinner 
         android:id="@+id/major_spinner"
+        android:layout_below="@id/major_premise_tv"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:drawSelectorOnTop="true"
         />
     <EditText
         android:id="@+id/major_subject"
+        android:layout_below="@id/major_spinner"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="men" />
         
     <Spinner 
         android:id="@+id/major_verb_spinner"
+        android:layout_below="@id/major_subject"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:drawSelectorOnTop="true"
         android:prompt="@string/verb_prompt" />
     <EditText
         android:id="@+id/major_predicate"
+        android:layout_below="@id/major_verb_spinner"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="moribund" />
     <Button
         android:id="@+id/major_done_button"
+        android:layout_below="@id/major_predicate"
         android:gravity="right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/major_done_button_label" />
 <!-- TODO: use resource for text, figure out why -->
 <!-- gravity="right" hasn't the desired effect: putting button on far right -->        
-</LinearLayout>
+</RelativeLayout>
